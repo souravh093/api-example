@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Information</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-center text-3xl font-semibold mt-8">
+        All Countries Information
+      </h2>
+      <section class="px-96 pt-8">
+        <div id="country-details">
+          
+        </div>
+        <div class="overflow-x-auto">
+          <table class="table table-compact w-full">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Region</th>
+                <th>Subregion</th>
+                <th>Capital</th>
+                <th>Area</th>
+                <th>Population</th>
+              </tr>
+            </thead>
+            <tbody id="countryContainer">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </header>
+
+    <!-- Put this part before </body> tag -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label
+          for="my-modal-3"
+          class="btn btn-sm btn-circle absolute right-2 top-2"
+          >✕</label
+        >
+        <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+        <p class="py-4">
+          You've been selected for a chance to get one year of subscription to
+          use Wikipedia for free!
+        </p>
+      </div>
+    </div>
+
+    <script src="js/country.js"></script>
+  </body>
+</html>
